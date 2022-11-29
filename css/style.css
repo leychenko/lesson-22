@@ -1,0 +1,88 @@
+/* &display=swap */
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body{
+	font-family: 'Lato';
+	font-weight: 400;
+	font-size: 22px;
+	font-style: normal;
+	line-height: 1.3;
+	background-color: #666;
+	color: #fff;
+}
+.page__container { 
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	gap: 5rem;
+	padding: 40px 0;
+}
+.page__javascript{
+	border: 2px solid black;
+	box-shadow: 0 0 12px 1px white;
+	border-radius: 10px;
+	padding: 15px;
+	background-color:rgb(131, 127, 127);
+}
+.page__javascript:hover{
+	box-shadow: 0 0 8px 1px white;
+}
+.page__title { 
+	font-size: 55px;
+	font-weight: 700;
+	color:rgb(35, 175, 35) ;
+	text-align: center;
+}
+.page__subtitle { 
+	font-size: 35px;
+	color: rgb(224, 75, 75);
+	text-decoration: underline;
+	text-align: center;
+}
+.page__subtitle:not(:last-child){
+	margin-bottom: 30px;
+}
+.block__list { 
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+span{
+	color: red;
+}
+.block__item--one::before{
+	content: "1.";
+	margin-right: 5px;
+}
+.block__item--two::before{
+	content: "2.";
+	margin-right: 5px;
+}
+.block__item--three::before{
+	content: "3.";
+	margin-right: 5px;
+}
+.block__item--four::before{
+	content: "4.";
+	margin-right: 5px;
+}
+.block__item--five::before{
+	content: "5.";
+	margin-right: 5px;
+}
